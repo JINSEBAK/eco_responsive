@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1400, initial-scale=1.0, user-scalable=0">
+    <title>(주)에코씨오</title>
+    <meta name="description" content="K-순환경제 대표 자원순환 플랫폼, 에코씨오">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="(주)에코씨오">
+
+    <meta property="og:title" content="(주)에코씨오">
+    <meta property="og:image" content=""> <!-- 600X315 이상-->
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:description" content="K-순환경제 대표 자원순환 플랫폼, 에코씨오">
+    <meta property="og:url" content="https://">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="(주)에코씨오">
+    <meta name="twitter:url" content="https://">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:description" content="K-순환경제 대표 자원순환 플랫폼, 에코씨오">
+
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    
+    <link rel="stylesheet" href="/assets/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/aos.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/swiper.min.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap" class="sub">
+        
+        <!-- header -->
+	    <%@ include file="../common/header.jsp" %>
+
+        <div id="container">
+            <div class="inner">
+                <div class="page-header">
+                    <h2>공지 사항</h2>
+                </div>
+                <!-- 게시판 -->
+                <div class="board-wrap">
+                    <div class="board-view">
+                        <div class="view-header">
+                            <p class="subject" id="noticeTitle"></p>
+                            <span class="date" id="regDts"></span>
+                        </div>                  
+                        <div class="content" id="noticeCntt">
+                        </div>
+                        <!-- <div class="post-pagination">
+                            <div class="post-prev">
+                                <span>이전글</span>
+                                <a href="view">입사 공지 – OOO 분야 00명 모집 </a>
+                            </div>
+                            <div class="post-next">
+                                <span>다음글</span>
+                                <a href="">입사 공지 – OOO 분야 00명 모집</a>
+                            </div>
+                        </div> -->
+                        <div class="list-btn">
+                            <a href="javascript:history.back()" class="btn">목록</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //게시판 -->
+            </div>
+        </div>
+                <!-- footer -->
+	    <%@ include file="../common/footer.jsp" %>
+    </div>
+
+    <script type="text/javascript" src="/assets/js/noticeDetail.js?ver=01"></script>
+
+</body>
+</html>

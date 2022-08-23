@@ -1,0 +1,73 @@
+/* 공통 */
+#wrap{
+    padding-bottom: 0;
+}
+.board-wrap{
+    padding:16px 24px;
+}
+
+/* 탭 */
+.board-wrap .board-tab{
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.board-wrap .board-tab *{
+    width: calc(100% - 8px);
+    text-align: center;
+    line-height: 38px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    color:#7C7F84;
+    border:1px solid #AEB0B4;
+}
+.board-wrap .board-tab *.cur{
+    font-weight: 700;
+    color:#FF7E55;
+    border-color: #FF7E55;
+}
+.board-wrap .board-tab *+*{
+    margin-left: 8px;
+}
+
+/* 목록 */
+.board-list .board-item{
+    border-bottom: 1px solid #E4E8EF;
+}
+.board-list .board-item a{
+    display: block;
+    padding:16px 0;
+}
+.board-list .board-item .subject{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.board-list .board-item .date{
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color:#7C7F84;
+}
+
+/* 상세 */
+.board-view .view-header{
+    border-bottom: 1px solid #E4E8EF;
+    padding:16px 0;
+}
+.board-view .view-header .subject{
+    font-size: 16px;
+    line-height: 22px;
+}
+.board-view .view-header .date{
+    display: block;
+    margin-top: 9px;
+    font-size: 12px;
+    color:#7C7F84;
+}
+.board-view .content{
+    padding:24px 0;
+    line-height: 2em;
+}

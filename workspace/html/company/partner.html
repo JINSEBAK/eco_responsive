@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1400, initial-scale=1.0, user-scalable=0">
+    <title>(주)에코씨오</title>
+    <meta name="description" content="K-순환경제 대표 자원순환 플랫폼, 에코씨오">
+    <meta property="og:locale:alternate" content="ko_KR">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="(주)에코씨오">
+
+    <meta property="og:title" content="(주)에코씨오">
+    <meta property="og:image" content=""> <!-- 600X315 이상-->
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:description" content="K-순환경제 대표 자원순환 플랫폼, 에코씨오">
+    <meta property="og:url" content="https://">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="(주)에코씨오">
+    <meta name="twitter:url" content="https://">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:description" content="K-순환경제 대표 자원순환 플랫폼, 에코씨오">
+
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    
+    <link rel="stylesheet" href="/assets/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/aos.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/swiper.min.js"></script>
+    <script src="/assets/js/aos.js"></script>
+    <script src="/assets/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap" class="sub">
+        <!-- header -->
+	    <%@ include file="../common/header.jsp" %>
+
+        <div id="container">
+            <div class="page-header inner" data-aos="fade-in">
+                <h2>파트너</h2>
+            </div>
+            <div class="partner-wrap">
+                <div class="partner-top">
+                    <div data-aos="fade-up">
+                        <p class="esamanru">우리 삶의 터전인 지구를 위해 ECOCO와 [자원순환 플랫폼]에 동참하실 <br/>지자체와 기업의 참여를 기다립니다.</p>
+                        <span>문의 <em class="poppins">info@ecocarbonzero.com</em></span>
+                    </div>
+                </div>
+                <div class="inner">
+                    <div class="partner-box">
+                        <h3 class="esamanru" data-aos="fade-up">지방자치단체</h3>
+                        <div class="partner-img" data-aos="fade-up">
+                            <img src="/assets/images/partner_1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="partner-box">
+                        <h3 class="esamanru" data-aos="fade-up">교육 기관</h3>
+                        <div class="partner-img" data-aos="fade-up">
+                            <img src="/assets/images/partner_2.png" alt="">
+                        </div>
+                    </div>
+                    <section class="partner-info" data-aos="fade-up">
+                        <table>
+                            <colgroup>
+                                <col width="210px">
+                                <col width="220px">
+                                <col width="auto">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>협의기관 수</th>
+                                    <th>세부 기재</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>지방자치단체</td>
+                                    <td>20개 지자체</td>
+                                    <td>서울 종로구, 중구, 서대문구, 도봉구, 성동구, 용산구, 강동구, 성남시, 동두천시, 광주시(경기), 이천시,<br/>
+                                        의왕시, 남양주시 인천시, 부산시, 대전시, 대구시, 광주시(전남), 여수시, 해남군</td>
+                                </tr>
+                                <tr>
+                                    <td>교육기관</td>
+                                    <td>7개 기관</td>
+                                    <td>고려대학교, 서초 계성초·고교, 성남시 유치원(500여개), 충주 성심학교, 논산 쌘뽈여고, 광주 교육대학교</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+	    <%@ include file="../common/footer.jsp" %>
+    </div>
+
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=r1emriyvhw"></script>
+    <script>
+        var map = new naver.maps.Map('map', {
+            center: new naver.maps.LatLng(37.5061371, 127.0340773),
+            zoom: 17
+        });
+        
+        var marker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.5061371, 127.0340773),
+            map: map
+        });
+    </script>
+</body>
+</html>
