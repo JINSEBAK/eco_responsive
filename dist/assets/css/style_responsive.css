@@ -1,0 +1,161 @@
+
+/* desktop css - style.css */
+
+
+@media (min-width: 1400px) {
+
+}
+@media (max-width: 1399px) {
+    html, body, header {
+        min-width: 100%;
+    }
+    header .inner,
+    .inner {
+        width: 100%;
+    }
+
+    /* recruit */
+    .recruit-wrap section .recruit-guide {
+        padding: 0 36px;
+    }
+}
+@media (max-width: 1199px) {
+    footer {
+        padding: 48px;
+    }
+    footer .footer-left {
+        width: calc(100% / 2 + 150px);
+    }
+    footer .footer-right {
+        width: calc(100% / 2 - 75px);
+    }
+    footer address {
+        width: 100%;
+    }
+    footer address p {
+        align-items: start;
+    }
+    
+}
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    footer address p:nth-child(2) {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    header .logo {
+        height: 60px;
+        width: auto;
+    }
+    footer {
+        padding: 32px;
+    }
+    footer .footer-left {
+        width: 49%;
+        flex-direction: column;
+    }
+    footer .footer-left img {
+        height: 60px;
+        width: auto;
+    }
+    footer .footer-right {
+        width: 49%;
+        margin-top: 100px;
+    }
+    footer .footer-info {
+        margin-left: 0;
+        margin-top: 32px;
+        line-height: 1.1;
+    }
+    footer .footer-info strong {
+        margin-bottom: 16px;
+    }
+
+
+    /* recruit */
+    .recruit-wrap section .recruit-guide {
+        padding: 0 24px;
+    }
+    
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    body { 
+        border: 1px solid blue; 
+    }
+}
+@media (max-width: 575px) {
+
+    #wrap.sub .page-header {
+        padding: 48px 16px;
+    }
+    #wrap.sub .page-header h2 {
+        font-size: 32px;
+    }
+    footer {
+        padding: 24px 24px 80px;
+    }
+    footer .inner {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    footer .footer-left, footer .footer-right {
+        width: 100%;
+    }
+    footer .footer-right {
+        margin-top: 10px;
+    }
+    footer .footer-info .copyright {
+        position: absolute;
+        bottom: -48px;
+    }
+
+    /* recruit */
+    .recruit-wrap {
+        padding-bottom: 64px;
+    }
+    .recruit-wrap section .section-header h3 {
+        font-size: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .recruit-wrap section .section-header h3::before {
+        left: 16px;
+        width: 60px;
+    }
+    .recruit-wrap section .recruit-guide {
+        padding: 0 16px;
+    }
+    .recruit-wrap section .recruit-guide .download-btn a {
+        width: auto;
+        height: auto;
+        font-size: 14px;
+        padding: 16px;
+    }
+    .recruit-wrap section .recruit-guide .download-btn a:active em {
+        background-image: url(../images/icon_download_white.png);
+    }
+    .recruit-wrap section .recruit-guide .table table th {
+        width: 28%;
+        padding: 16px 0 16px 16px;
+    }
+    .recruit-wrap section .recruit-guide .table table th,
+    .recruit-wrap section .recruit-guide .table table td {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 413px) {
+}
+@media (max-width: 374px) {
+    
+}
+@media (max-width: 359px) {
+   
+}
+@media (max-width: 319px) {
+    
+}
+
+

@@ -84,7 +84,8 @@ gulp.task("css:copy", () => {
   return new Promise((resolve) => {
     gulp
     .src(PATH.ASSETS.STYLE + "/**/*.css")
-    .pipe(gulp.dest(DEST_PATH.ASSETS.STYLE));
+    .pipe(gulp.dest(DEST_PATH.ASSETS.STYLE))
+    .pipe(browserSync.reload({ stream: true }));
 
     resolve();
   });

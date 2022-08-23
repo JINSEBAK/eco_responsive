@@ -38,9 +38,9 @@
     <script src="/assets/js/main.js"></script>
 </head>
 <body>
-    <div id="wrap">
+    <div id="wrap" class="sub">
         <!-- header -->
-        <header>
+	    <header>
     <div class="inner">
         <div class="logo">
             <a href="/">
@@ -98,60 +98,60 @@
         </nav>
     </div>
 </header>
+
         <div id="container">
-           <section class="main-visual">
-                <div class="visual-slide swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide slide-1" style="background-image:url(/assets/images/main_slide_bg_1.jpg)">
-                            <div class="inner">
-                                <strong class="esamanru">K-순환경제 대표 자원순환 플랫폼</strong>
-                                <p><em>앱 다운받고</em> 자원순환에 참여하여 <em>보상</em>을 받으세요.</p>
-                                <img src="/assets/images/main_slide_img_1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide slide-2" style="background-image:url(/assets/images/main_slide_bg_2.jpg)">
-                            <div class="inner">
-                                <strong class="esamanru">무분별하게 버려지는 재활용품, <br/>ECOCO와 함께 해결하세요!</strong>
-                                <p>ESG가 뭐 별건가요, 우리 같이 실천해요</p>
-                                <img src="/assets/images/main_slide_img_2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide slide-3" style="background-image:url(/assets/images/main_slide_bg_3.jpg)">
-                            <div class="inner">
-                                <strong class="esamanru">지역 환경을 생각하는 O2O 자원순환 플랫폼</strong>
-                                <p>지구에 좋은 일을 한 가정에는 반드시 경사가 있어요.</p>
-                                <img src="/assets/images/main_slide_img_3.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="visual-button-prev">이전</button>
-                    <button type="button" class="visual-button-next">다음</button>
-                    <div class="visual-pagination"></div>
+            <div class="inner">
+                <div class="page-header">
+                    <h2>공지 사항</h2>
                 </div>
-           </section>
-           <section class="main-section-1">
-                <div class="inner">
-                    <div class="section-header esamanru"  data-aos="fade-in">
-                        <p>자원순환거점, 자원순환플랫폼, 자원순환관리사를 활용하여</p>
-                        <strong>고품질의 재활용품 수거 체계 확립</strong>
+                <!-- 게시판 -->
+                <div class="board-wrap">
+                    <div class="board-total">
+                        Total <span id="notiCnt">100</span>
                     </div>
-                    <div class="info-graphic" data-aos="fade-in">
-                        <img src="/assets/images/main_section_1.png" alt="">
+                    <div class="board-list">
+                        <table id="noticeList">
+                            <colgroup>
+                                <col width="200px">
+                                <col width="auto">
+                                <col width="240px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>작성일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                    <td>100</td>
+                                    <td>
+                                        <a href="view">입사공지 - OOO분야 00명 모집</a>
+                                    </td>
+                                    <td>2022-05-31 16:15</td>
+                                </tr> -->
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="board-pagination" id="pagination_div">
+                        <ul class="pagination" id="pagination"></ul>
+                    </div>
+                    <div class="board-search">
+                        <form action="">
+                            <select name="" id="searchType">
+                                <option value="01">제목</option>
+                            </select>
+                            <div class="search-box">
+                                <input type="text" name="" id="searchValue" placeholder="검색어를 입력하세요">
+                                <button type="button" id="searchBtn">검색</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-           </section>
-           <section class="main-section-2">
-                <div class="inner">
-                    <div class="section-header esamanru"  data-aos="fade-in">
-                        <p>에코씨오의 자원순환플랫폼은 효율적인 <em>재활용 수거 및 활용 시스템을 확립</em>하여 <br/>높은 재활용율을 유도함으로써 <em>우리 동네 환경을 개선하며 지구를 보호</em>합니다.</p>
-                    </div>
-                    <div class="info-graphic">
-                        <img src="/assets/images/main_section_2_1.png" data-aos="fade-right" alt="">
-                        <img src="/assets/images/main_section_2_2.png" data-aos="fade-right" alt="">
-                    </div>
-                </div>
-           </section>
-           <div class="main-banner">ZERO WASTE</div>
+                <!-- //게시판 -->
+            </div>
         </div>
         <!-- footer -->
         
@@ -191,7 +191,8 @@
         </div>
     </div>
 </footer>
-
     </div>
+
+    <script type="text/javascript" src="/assets/js/notice.js?ver=01"></script>
 </body>
 </html>
