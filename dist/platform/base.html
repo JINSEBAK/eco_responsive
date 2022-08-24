@@ -95,9 +95,39 @@
                     </div>
                 </li>
             </ul>
+            <!-- mobile menu -->
+            <div class="m-menu">
+                <div class="inner">
+                    <button type="button" class="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul>
+                        <li>menu1</li>
+                        <li>menu2</li>
+                        <li>menu3</li>
+                        <li>menu4</li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </div>
 </header>
+
+<script>
+    var menuBtn = document.querySelector('.menu');
+    var body = document.querySelector('body');
+    menuBtn.addEventListener('click', function() {
+        if (menuBtn.classList.contains('open')) {
+            menuBtn.classList.remove('open');
+            body.classList.remove('open');
+        } else {
+            menuBtn.classList.add('open');
+            body.classList.add('open');
+        }
+    });
+</script>
         
         <div id="container">
             <div class="page-header inner" data-aos="fade-in">
