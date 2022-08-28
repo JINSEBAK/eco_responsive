@@ -1,6 +1,11 @@
 
 /* desktop css - style.css */
-
+header nav > .m-menu {
+    display: none;
+}
+header nav > .menu {
+    display: none;
+}
 
 @media (min-width: 1400px) {
 
@@ -45,17 +50,99 @@
 }
 
 @media (max-width: 767px) {
+    html {
+        -webkit-touch-callout:none;
+        -webkit-user-select:none;
+        -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    }
     body.open {
         overflow-y: hidden;
     }
+    header:hover {
+        background-color: transparent;
+    }
     header .logo {
-        height: 60px;
-        width: auto;
+        height: 56px;
+        width: 120px;
+    }
+    header .logo a {
+        background-position: 16px center;
+        background-size: auto 72%;
     }
     header nav > ul {
-        display: none;
+        display: block;
+        width: 72vw;
+        margin-top: 56px;
     }
-    header nav .m-menu {
+    header nav > ul > li:first-child {
+        border-top: 1px solid #f2f2f2;
+        padding-top: 8px;
+    }
+    header nav > ul > li > a {
+        width: auto;
+        text-align: left;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 24px;
+        transition: none;
+    }
+    header nav > ul > li > a + .depth {
+        display: block;
+        position: relative;
+        text-align: left;
+        font-size: 16px;
+        line-height: 20px;
+        background-color: transparent;
+        padding: 16px 0;
+    }
+    header nav .depth li a {
+        display: block;
+        color: #000;
+        padding-left: 24px;
+    }
+    header nav > .menu {
+        width: 30px;
+        height: 20px;
+        background: transparent;
+        position: relative;
+        overflow: hidden;
+        float: right;
+        margin: 18px 16px;
+        display: block;
+        z-index: 5;
+    }
+    header nav .menu span {
+        display: block;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        background: #fff;
+        position: absolute;
+        transition: all 0.3s;
+    }
+    .sub header nav .menu span,
+    header.fixed nav .menu span,
+    header nav .menu.open span {
+        background: #000 !important;
+    }
+    header nav .menu span:nth-child(1) {
+        top: 0;
+    }
+    header nav .menu span:nth-child(3) {
+        bottom: 0;
+    }
+    header nav .menu.open span:nth-child(1) {
+        rotate: 135deg;
+        top: 50%;
+    }
+    header nav .menu.open span:nth-child(2) {
+        left: 50px;
+    }
+    header nav .menu.open span:nth-child(3) {
+        rotate: 45deg;
+        top: 50%;
+    }
+    header nav > .m-menu {
         position: fixed;
         left: 0;
         top: 0;
@@ -63,50 +150,32 @@
         height: 100vh;
         background: rgba(0,0,0,.32);
     }
-    header nav .m-menu .inner {
+    header nav > .m-menu .inner {
         background: #fff;
-        width: 80vw;
+        width: 72vw;
         height: 100vh;
         position: absolute;
-        right: 0;
+        right: -500px;
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-start;
+        transition: all 1s;
     }
-    header nav .m-menu .menu {
-        width: 30px;
-        height: 20px;
-        background: #fff;
-        position: relative;
-        overflow: hidden;
-        float: right;
-        margin: 18px 16px;
+    header nav > .m-menu ~ ul {
+        display: none;
     }
-    header nav .m-menu .menu span {
+    header nav > .menu.open + .m-menu ~ ul {
         display: block;
-        width: 100%;
-        height: 1px;
-        left: 0;
-        background: #000;
-        position: absolute;
-        transition: all 0.3s;
     }
-    header nav .m-menu .menu span:nth-child(1) {
-        top: 0;
+    header nav > .menu.open + .m-menu {
+        display: block;
     }
-    header nav .m-menu .menu span:nth-child(3) {
-        bottom: 0;
+    header nav > .menu.open + .m-menu .inner {
+        right: 0;
     }
-    header nav .m-menu .menu.open span:nth-child(1) {
-        rotate: 135deg;
-        top: 50%;
-    }
-    header nav .m-menu .menu.open span:nth-child(2) {
-        left: 50px;
-    }
-    header nav .m-menu .menu.open span:nth-child(3) {
-        rotate: 45deg;
-        top: 50%;
+    .sub header {
+        background-color: #fff !important;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 8%) !important;
     }
 
     footer {
@@ -147,13 +216,16 @@
 }
 @media (max-width: 575px) {
 
-   
+   #wrap.sub {
+       padding-top: 72px;
+   }
 
     #wrap.sub .page-header {
-        padding: 48px 16px;
+        padding: 24px 16px;
     }
     #wrap.sub .page-header h2 {
-        font-size: 32px;
+        font-size: 24px;
+        line-height: normal;
     }
     footer {
         padding: 24px 24px 80px;
@@ -179,7 +251,10 @@
         margin-left: 0;
         margin-top: 10px;
     }
-
+    /* main */
+    .main-visual .visual-slide .swiper-slide strong {
+        font-size: 10vw;
+    }
     /* greeting */
     .greeting {
         flex-direction: column;
@@ -247,6 +322,119 @@
     }
 
     /* service */
+    .service-wrap .section-1,
+    .service-wrap .section-2 {
+        height: 300px;
+    }
+    .service-wrap .section-1 p,
+    .service-wrap .section-2 p {
+        font-size: 26px;
+        line-height: 38px;
+    }
+    .service-wrap .section-2 p  {
+        padding: 0 52px;
+    }
+    .service-wrap section .section-title {
+        /* 이걸 왜 다 따로 스타일을 잡와놨는가 */
+        font-size: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .service-wrap section .section-title::before {
+        left: 16px;
+        width: 60px;
+    }
+    .service-wrap section.app .app-text {
+        flex-wrap: wrap;
+    }
+    .service-wrap section.app .app-text>.text-box {
+        width: 100%;
+        padding: 36px;
+    }
+    .service-wrap section.app .app-text>.text-box p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .service-wrap section.app .app-text>.text-box .desc {
+        margin-top: 30px;
+        line-height: 24px;
+    }
+    .service-wrap section.app .app-screen {
+        margin-top: 40px;
+    }
+    .service-wrap section.app .app-screen ul {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0 36px 8px 16px;
+    }
+    .service-wrap section.app .app-screen ul::-webkit-scrollbar {
+        display: none;
+    }
+    .service-wrap section.app .app-screen ul li {
+        min-width: 136px;
+    }
+    .service-wrap section.app .app-screen ul li span {
+        font-size: 16px;
+    }
+    .service-wrap section.app .inner {
+        padding-top: 80px;
+    }
+    .service-wrap section.point .inner > p {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .service-wrap section.point .inner > p em {
+        display: block;
+    }
+    .service-wrap section.admin-app .text-box {
+        width: 100%;
+    }
+    .service-wrap section.admin-app .text-box p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .service-wrap section.admin-app .text-box p,
+    .service-wrap section.admin-app .text-box .app-link {
+        padding: 0 36px;
+    }
+    .service-wrap section.admin-app .text-box .desc {
+        font-size: 18px;
+        line-height: 24px;
+        padding: 0 36px;
+    }
+    .service-wrap section.admin-web {
+        height: 792px;
+    }
+    .service-wrap section.admin-web .inner {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .service-wrap section.admin-web .text-box {
+        width: 100%;
+        padding-top: 80px;
+    }
+    .service-wrap section.admin-web .text-box p {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+    .service-wrap section.admin-web .text-box div {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .service-wrap section.admin-web .text-box span {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+    }
+    .service-wrap section.admin-web .inner img {
+        max-width: 80%;
+        position: static;
+        display: block;
+        margin: 48px auto;
+    }
     .base-wrap .base-content {
         padding: 0 16px;
     }
