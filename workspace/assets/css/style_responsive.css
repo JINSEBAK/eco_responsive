@@ -273,8 +273,98 @@ header nav > .menu {
     }
     .greeting .ceo-text span {
         font-size: 16px;
+    }
+    /* partner */
+    .partner-wrap .partner-top {
+        border: 1px solid red;
+        height: 400px;
+    }
+    .partner-wrap .partner-top p {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 0 36px;
+    }
+    .partner-wrap .partner-top span {
+        font-size: 16px;
+    }
+    .partner-wrap .partner-box h3 {
+        margin-bottom: 40px;
+    }
+    .partner-wrap .partner-box .partner-img {
+        height: 50vh;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-transform: translateZ(0);
+    }
+    .partner-wrap .partner-box .partner-img img {
+        height: 100%;
+        width: 200vw;
+        max-width: 200vw;
+    }
+    .partner-wrap .partner-box:nth-of-type(2) .partner-img {
+        height: 38vh;
+    }
+    .partner-wrap .partner-box:nth-of-type(2) .partner-img img {
+        margin-left: -112px;
+    }
+    .partner-wrap .partner-info {
+        margin-top: 80px;
+        border: 1px solid red;
+        overflow-x: auto;
+    }
+    .partner-wrap .partner-info table {
 
     }
+    .partner-wrap .partner-info table th,
+    .partner-wrap .partner-info table td {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+    /* business */
+    .business-wrap .section-1 {
+        padding: 48px 0;
+    }
+    .business-wrap section[class^=section-] h3.section-title {
+        margin-bottom: 48px;
+    }
+    .business-wrap .section-1 .img ul {
+        flex-direction: column;
+    }
+    .business-wrap .section-1 .img ul li p {
+        font-size: 16px;
+    }
+    .business-wrap .section-1 .img ul li > img {
+        transform: rotate(90deg);
+        width: 20px;
+        margin: 24px auto;
+    }
+    .business-wrap .section-3 .img {
+        padding: 36px 16px;
+    }
+    .business-wrap .section-3 .img img+img {
+        margin: 24px auto;
+    }
+    .business-wrap .section-3 .img div {
+        font-size: 16px;
+        line-height: 20px;
+        height: auto;
+        width: auto;
+        padding: 36px 48px;
+    }
+    .business-wrap .business-banner {
+        margin-top: 80px;
+        height: 400px;
+    }
+    .business-wrap .business-banner p {
+        font-size: 20px;
+        font-weight: normal;
+        padding: 0 56px;
+    }
+    .business-wrap .business-banner strong {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
     /* location */
     .location-wrap {
         padding-bottom: 64px;
@@ -328,36 +418,63 @@ header nav > .menu {
     }
     .service-wrap .section-1 p,
     .service-wrap .section-2 p {
-        font-size: 26px;
-        line-height: 38px;
+        font-size: 24px;
+        line-height: 36px;
     }
     .service-wrap .section-2 p  {
         padding: 0 52px;
     }
-    .service-wrap section .section-title {
-        /* 이걸 왜 다 따로 스타일을 잡와놨는가 */
+    .service-wrap section .section-title,
+    .base-wrap .section-1 .base-text strong,
+    .recruit-wrap section .section-header h3,
+    .business-wrap section[class^=section-] h3.section-title,
+    .partner-wrap .partner-box h3 {
         font-size: 24px;
-        padding-left: 16px;
-        padding-right: 16px;
+        text-align: center;
+        padding-top: 21px;
+        position: relative;
     }
-    .service-wrap section .section-title::before {
-        left: 16px;
+    .service-wrap section .section-title::before, 
+    .base-wrap .section-1 .base-text strong::before,
+    .recruit-wrap section .section-header h3::before,
+    .business-wrap section[class^=section-] h3.section-title::before,
+    .partner-wrap .partner-box h3::before {
+        left: 50%;
+        transform: translateX(-50%);
         width: 60px;
+        position: absolute;
+        top: 0;
+    }
+    .service-wrap section.app {
+        height: 1500px;
     }
     .service-wrap section.app .app-text {
         flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .service-wrap section.app .app-text > img {
+        width: 80%;
+        max-width: 400px;
+        position: relative;
+        left: 50%;
+        margin-left: -30%;
     }
     .service-wrap section.app .app-text>.text-box {
         width: 100%;
-        padding: 36px;
+        padding: 48px 24px;
     }
     .service-wrap section.app .app-text>.text-box p {
         font-size: 20px;
         line-height: 28px;
+        text-align: center;
     }
     .service-wrap section.app .app-text>.text-box .desc {
-        margin-top: 30px;
+        margin-top: 92px;
         line-height: 24px;
+        text-align: center;
+    }
+    .service-wrap section.app .app-text>.text-box .app-link {
+        justify-content: center;
     }
     .service-wrap section.app .app-screen {
         margin-top: 40px;
@@ -378,7 +495,7 @@ header nav > .menu {
         font-size: 16px;
     }
     .service-wrap section.app .inner {
-        padding-top: 80px;
+        padding-top: 120px;
     }
     .service-wrap section.point .inner > p {
         font-size: 24px;
@@ -387,6 +504,12 @@ header nav > .menu {
     .service-wrap section.point .inner > p em {
         display: block;
     }
+    .service-wrap section.admin-app {
+        height: 1020px;
+    }
+    .service-wrap section.admin-app::after {
+        height: 240px;
+    }
     .service-wrap section.admin-app .text-box {
         width: 100%;
     }
@@ -394,14 +517,25 @@ header nav > .menu {
         font-size: 20px;
         line-height: 28px;
     }
+    .service-wrap section.admin-app .inner>img {
+        width: 80%;
+        max-width: 400px;
+        bottom: 72px;
+        right: auto;
+        left: 50%;
+        margin-left: -30%;
+    }
     .service-wrap section.admin-app .text-box p,
     .service-wrap section.admin-app .text-box .app-link {
         padding: 0 36px;
+        text-align: center;
+        justify-content: center;
     }
     .service-wrap section.admin-app .text-box .desc {
         font-size: 18px;
         line-height: 24px;
         padding: 0 36px;
+        text-align: center;
     }
     .service-wrap section.admin-web {
         height: 792px;
@@ -412,7 +546,7 @@ header nav > .menu {
     }
     .service-wrap section.admin-web .text-box {
         width: 100%;
-        padding-top: 80px;
+        padding-top: 120px;
     }
     .service-wrap section.admin-web .text-box p {
         font-size: 24px;
@@ -430,13 +564,14 @@ header nav > .menu {
         font-size: 16px;
     }
     .service-wrap section.admin-web .inner img {
-        max-width: 80%;
+        width: 80%;
+        max-width: 400px;
         position: static;
         display: block;
         margin: 48px auto;
     }
     .base-wrap .base-content {
-        padding: 0 16px;
+        padding: 48px 16px;
     }
     .base-wrap .section-1 {
         padding-bottom: 80px;
@@ -445,15 +580,24 @@ header nav > .menu {
         font-size: 20px;
         line-height: 26px;
         margin-top: 48px;
-    }
-    .base-wrap .section-1 .base-text strong {
-        font-size: 24px;
+        text-align: center;
+        padding: 0 8%;
     }
     .base-wrap .section-1 .base-text ul li {
         font-size: 16px;
+        text-align: center;
+        padding-left: 0;
+    }
+    .base-wrap .section-1 .base-text ul li::before {
+        display: inline-block;
+        position: static;
+        height: 3px;
     }
     .base-wrap .section-1 .base-text ul li span {
         display: block;
+    }
+    .base-wrap .section-1 .base-img .text {
+        text-align: center;
     }
     .base-wrap .section-1 .base-img .text strong {
         font-size: 20px;
@@ -486,20 +630,27 @@ header nav > .menu {
     .base-wrap .section-2 .base-photo .photo-box ul li span {
         font-size: 16px;
         margin-bottom: 24px;
+        text-align: center;
     }
-
     /* recruit */
     .recruit-wrap {
-        padding-bottom: 64px;
+        padding: 48px 0;
     }
-    .recruit-wrap section .section-header h3 {
+    .recruit-wrap section .talent {
+        padding: 96px 0;
+        background-position: center bottom;
+        background-size: 100% auto;
+    }
+    .recruit-wrap section .talent p {
         font-size: 24px;
-        padding-left: 16px;
-        padding-right: 16px;
+        line-height: 36px;
+        text-align: center;
     }
-    .recruit-wrap section .section-header h3::before {
-        left: 16px;
-        width: 60px;
+    .recruit-wrap section .talent img {
+        width: 80%;
+        max-width: 400px;
+        margin: 36px auto;
+        display: block;
     }
     .recruit-wrap section .recruit-guide {
         padding: 0 16px;
@@ -515,18 +666,85 @@ header nav > .menu {
     }
     .recruit-wrap section .recruit-guide .table table th {
         width: 28%;
-        padding: 16px 0 16px 16px;
+        padding: 16px 0 16px 8px;
     }
     .recruit-wrap section .recruit-guide .table table th,
     .recruit-wrap section .recruit-guide .table table td {
         font-size: 16px;
         line-height: 24px;
     }
+    /* notice */
+    .board-wrap {
+        border: 1px solid red;
+    }
+    .board-wrap .board-total {
+        padding: 0 16px;
+        margin-bottom: 8px;
+    }
+    .board-wrap .board-list {
+        padding: 0 16px;
+    }
+    .board-wrap .board-list table {
+        table-layout: auto;
+    }
+    .board-wrap .board-list th, 
+    .board-wrap .board-list td {
+        font-size: 14px;
+        padding: 8px 0;
+        line-height: normal;
+    }
+    .board-wrap .board-list th:nth-child(1),
+    .board-wrap .board-list td:nth-child(1) {
+        display: none;
+    }
+    .board-wrap .board-list th:nth-child(2) {
+        width: 68%;
+        background: pink;
+        text-align: left;
+        text-indent: 8px;
+    }
+    .board-wrap .board-list th:nth-child(3) {
+        width: 32%;
+        background: yellow;
+    }
+    .board-wrap .board-list td {
+        font-size: 14px;
+    }
+    .board-wrap .board-list td a {
+        font-size: 14px;
+        font-family: inherit;
+        background: pink;
+        text-align: left;
+        text-indent: 8px;
+    }
+    .board-wrap .board-search form {
+        padding: 0 16px;
+        border: 1px solid red;
+    }
+    .board-wrap .board-search .search-box input {
+        width: auto;
+    }
+    .board-wrap .board-search .search-box button {
+        width: 88px;
+        font-size: 14px;
+    }
 }
 @media (max-width: 413px) {
 }
-@media (max-width: 374px) {
-    
+@media (max-width: 375px) {
+
+    /* service */
+    .service-wrap .section-1 p, 
+    .service-wrap .section-2 p {
+        font-size: 20px;
+    }
+    .service-wrap .section-2 p {
+        padding: 0 36px;
+    }
+    .service-wrap section.point .inner > p {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
 @media (max-width: 359px) {
    
