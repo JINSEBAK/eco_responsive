@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="/assets/css/aos.css">
     <link rel="stylesheet" href="/assets/css/common.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/style_responsive.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/swiper.min.js"></script>
     <script src="/assets/js/aos.js"></script>
@@ -40,7 +40,8 @@
 <body>
     <div id="wrap" class="sub">
         <!-- header -->
-	    <header>
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <header>
     <div class="inner">
         <div class="logo">
             <a href="/">
@@ -48,15 +49,6 @@
             </a>
         </div>
         <nav>
-            <!-- mobile menu -->
-            <button type="button" class="menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="m-menu">
-                <div class="inner"></div>
-            </div>
             <ul>
                 <li>
                     <a href="../company/intro.html">회사 소개</a>
@@ -104,6 +96,64 @@
                     </div>
                 </li>
             </ul>
+
+            <!-- mobile menu -->
+            <button type="button" class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="m-menu">
+                <div class="inner">
+                    <ul class="m-menu-gnb">
+                        <li>
+                            <a href="../company/intro.html">회사 소개</a>
+                            <div class="depth">
+                                <ul>
+                                    <li>
+                                        <a href="../company/intro.html">인사말</a>
+                                    </li>
+                                    <li>
+                                        <a href="../company/business.html">비즈니스</a>
+                                    </li>
+                                    <li>
+                                        <a href="../company/partner.html">파트너</a>
+                                    </li>
+                                    <li>
+                                        <a href="../company/location.html">오시는 길</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../platform/service.html">자원 순환 플랫폼</a>
+                            <div class="depth">
+                                <ul>
+                                    <li>
+                                        <a href="../platform/service.html">서비스 소개</a>
+                                    </li>
+                                    <li>
+                                        <a href="../platform/base.html">서비스 거점</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="../notice/list.html">공지</a>
+                            <div class="depth">
+                                <ul>
+                                    <li>
+                                        <a href="../notice/list.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="../notice/recruit.html">입사지원</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         
         </nav>
     </div>
@@ -182,7 +232,22 @@
                     </div>
                     <div class="board-pagination" id="pagination_div">
                         <!-- <ul class="pagination" id="pagination"></ul> -->
-                        <ul class="pagination" id="pagination"><li class="page-item first disabled"><a href="#" class="page-link">&lt;&lt;</a></li><li class="page-item prev disabled"><a href="#" class="page-link">&lt;</a></li><li class="page-item active"><a href="#" class="page-link">1</a></li><li class="page-item next disabled"><a href="#" class="page-link">&gt;</a></li><li class="page-item last disabled"><a href="#" class="page-link">&gt;&gt;</a></li></ul>
+                        <ul class="pagination" id="pagination">
+                            <li class="page-item first disabled"><a href="#" class="page-link">&lt;&lt;</a></li>
+                            <li class="page-item prev disabled"><a href="#" class="page-link">&lt;</a></li>
+                            <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link">4</a></li>
+                            <li class="page-item"><a href="#" class="page-link">5</a></li>
+                            <li class="page-item"><a href="#" class="page-link">6</a></li>
+                            <li class="page-item"><a href="#" class="page-link">7</a></li>
+                            <li class="page-item"><a href="#" class="page-link">8</a></li>
+                            <li class="page-item"><a href="#" class="page-link">9</a></li>
+                            <li class="page-item"><a href="#" class="page-link">10</a></li>
+                            <li class="page-item next disabled"><a href="#" class="page-link">&gt;</a></li>
+                            <li class="page-item last disabled"><a href="#" class="page-link">&gt;&gt;</a></li>
+                        </ul>
                     </div>
                     <div class="board-search">
                         <form action="">
